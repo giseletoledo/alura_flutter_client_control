@@ -1,13 +1,15 @@
 import 'package:client_control/models/clients.dart';
 import 'package:client_control/pages/client_types_page.dart';
 import 'package:flutter/material.dart';
+import 'models/client.dart';
+import 'models/client_type.dart';
 import 'pages/clients_page.dart';
 import 'package:provider/provider.dart';
 
 void main() {
   runApp(
     ChangeNotifierProvider(
-      create: (context) => Clients(clients: []),
+      create: (context) => Clients(clients: [ ]),
       child: const MyApp()));
 }
 
