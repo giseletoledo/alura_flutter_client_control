@@ -8,7 +8,7 @@ class Clients extends ChangeNotifier {
   Clients({required this.clients});
 
   //criando um método de adicionar
-  void add(Client client) {
+  void addClients(Client client) {
     clients.add(client);
     notifyListeners();
   }
